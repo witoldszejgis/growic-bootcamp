@@ -11,7 +11,7 @@ contract MappingContract {
     function getUserBalance(address _address) private view returns (uint256) {
         return userBalance[_address];
     }
-    function setUserBalance(address _address, uint balance) private {
+    function setUserBalance(address _address, uint256 balance) private {
         userBalance[_address] = balance;
     }
     function deleteUserBalance(address _address) private  {
